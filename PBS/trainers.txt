@@ -9512,3 +9512,42 @@ Pokemon = GIGANTEON,45
 Pokemon = GIGANTEON,45
     Moves = LASTRESORT,PROTECT
     AbilityIndex = 1 # Friend to All
+#-------------------------------
+[LEADER_Brock,Brock]
+Policies = BROCK,CURSE_SANDSTORM
+Pokemon = HIPPOPOTAS,15
+    Moves = CRYSTALGLEAM,DUSTDEVIL,WINDTUNNEL,SLACKOFF
+    AbilityIndex = 0 # Sand Stream
+    Item = ROCKYHELMET
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 15,10,15,5,10,5
+Pokemon = MARACTUS,15
+    Moves = AUTUMNBLAST,SHOREUP,DRONING,SPIKYSHIELD
+    AbilityIndex = 1 # Desert Armor
+    Item = LEFTOVERS
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 15,10,20,5,10,0
+Pokemon = LILEEP,15
+    Moves = MEGADRAIN,RECOVER,ANCIENTPOWER,STOCKPILE
+    AbilityIndex = 1 # Water Absorb
+    Item = EVIOLITE
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,10,15,0,10,15
+Pokemon = ARCHEN,15
+    Moves = AERIALACE,ROCKTOMB,DEFOG,BULLDOZE
+    AbilityIndex = 0 # Defeatist
+    Item = SITRUSBERRY
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0
+Pokemon = CORSOLA,15
+    Moves = CALMMIND,RECOVER,ANCIENTPOWER,BALEFULBOP
+    AbilityIndex = 0 # Persistent Growth
+    Item = WHITEHERB
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0
+Pokemon = VAROOM,15
+    Moves = MACHDRIVE,BULLDOZE,POISONGAS,PROTECT
+    AbilityIndex = 0 # Speed Boost
+    Item = AIRBALLOON
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0

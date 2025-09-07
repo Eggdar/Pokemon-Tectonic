@@ -857,6 +857,12 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Battle Gym Leader 2
 #-------------------------------
+[LEADER_Brock]
+Name = Gym Leader
+Gender = Male
+BaseMoney = 100
+BattleBGM = Battle Gym Leader 1
+#-------------------------------
 [LEADER_Eko]
 Name = Gym Leader
 Gender = Male

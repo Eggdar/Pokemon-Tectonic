@@ -609,3 +609,19 @@ BattleHandlers::UserAbilityEndOfMove.add(:OFFENSIVE,
     end
   }
 )
+
+BattleHandlers::UserAbilityEndOfMove.add(:FUELSURGE,
+  proc { |ability, user, _targets, move, battle, _switchedBattlers|
+    next if !move.physicalMove?
+    preHP = user.instance_variable_get(:@preMoveHP) || user.hp
+    user.instance_variable_set(:@preMoveHP, nil)
+
+    # Only trigger if user is below half HP
+    if preHP <= user.totalhp / 2
+      battle.pbShowAbilitySplash(user, ability)
+      battle.pbDisplay(_INTL("{1} is hurt by its overheated engine!", user.pbThis))
+      user.applyFractionalDamage(1.0 / 8.0)
+      battle.pbHideAbilitySplash(user)
+    end
+  }
+)

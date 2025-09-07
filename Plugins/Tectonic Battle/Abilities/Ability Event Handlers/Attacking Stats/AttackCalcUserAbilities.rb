@@ -187,3 +187,11 @@ BattleHandlers::AttackCalcUserAbility.add(:FUELHUNGRY,
       next attackMult
   }
 )
+
+BattleHandlers::AttackCalcUserAbility.add(:FUELSURGE,
+  proc { |ability, user, _battle, attackMult|
+    if user.belowHalfHealth?
+      attackMult *= 1.3
+    end
+  }
+)

@@ -3159,3 +3159,11 @@ ShowArea = true
 Bicycle = true
 Weather = Stillness,100
 MapPosition = 0,20,7
+#-------------------------------
+[448]
+# TinLu's Chamber
+Outdoor = false
+ShowArea = false
+Bicycle = true
+BattleBack = wcave
+Environment = Cave

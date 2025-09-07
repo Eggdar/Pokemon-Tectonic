@@ -48,6 +48,16 @@ def perfectAceTrainer(maxTrainerLevel=15,giveDrop=true)
 	postBattleTeamSnapshot(_INTL("Pro Trainer Level {1}",maxTrainerLevel),true)
 end
 
+def perfectBrock(maxTrainerLevel=15)
+	blackFadeOutIn() {
+		setMySwitch('D',true)
+		setFollowerGone
+	}
+	incrementGlobalVar(TRAINERS_PERFECTED_GLOBAL_VAR)
+
+	postBattleTeamSnapshot(_INTL("Kanto Leader Brock",maxTrainerLevel),true)
+end
+
 def perfectDoubleTrainer(event1,event2,maxTrainerLevel = 15,giveDrop=PERFECTED_REGULAR_TRAINERS_DROP_ITEMS)
 	blackFadeOutIn() {
 		setMySwitch('D',true)

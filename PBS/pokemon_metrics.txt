@@ -5106,6 +5106,12 @@ FrontSprite = 0,26
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[REVAVROOM]
+BackSprite = -3,20
+FrontSprite = -3,24
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [RHYDON]
 BackSprite = 0,17
 FrontSprite = 0,11
@@ -6168,6 +6174,12 @@ FrontSprite = 0,32
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[TINGLU]
+BackSprite = 0,6
+FrontSprite = -18,10
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [TIRTOUGA]
 BackSprite = 0,28
 FrontSprite = 0,34
@@ -6621,6 +6633,12 @@ ShadowSize = 2
 [VAPOREON]
 BackSprite = 0,22
 FrontSprite = -4,17
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[VAROOM]
+BackSprite = 0,22
+FrontSprite = 4,28
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

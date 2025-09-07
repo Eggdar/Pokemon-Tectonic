@@ -757,6 +757,10 @@ Description = Upon entry, lowers the foe's Speed stat by two steps.
 Name = Fuel Hungry
 Description = Boosts Attack by 30%, but lowers Attack after using a physical move.
 #-------------------------------
+[FUELSURGE]
+Name = Fuel Surge
+Description = Boosts Attack by 30% when HP drops below half, but takes damage equal to 1/8 max HP as recoil.
+#-------------------------------
 [FULLBLUBBER]
 Name = Full Blubber
 Description = Immune to Fire-type and Ice-type moves.
@@ -2159,6 +2163,10 @@ Description = Whenever a foe's poison worsens, the Pokémon heals for 25% max HP
 [VERDANT]
 Name = Verdant
 Description = Powers up Grass-type moves of itself and its allies by 50%.
+#-------------------------------
+[VESSELOFRUIN]
+Name = Vessel of Ruin
+Description = Decreases the Special Attack stat of all other Pokémon on the field by 25%. Does not stack with itself.
 #-------------------------------
 [VICTORYMOLT]
 Name = Victory Molt

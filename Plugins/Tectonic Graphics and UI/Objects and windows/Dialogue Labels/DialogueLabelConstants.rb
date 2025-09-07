@@ -24,6 +24,9 @@ NOEL = _INTL("Noel")
 VICTOIRE = _INTL("Victoire")
 SAMORN = _INTL("Samorn")
 
+# Kanto Gym Leaders
+BROCK = _INTL("Brock")
+
 # Former champions
 SCILLA = _INTL("Scilla")
 CASEY = _INTL("Casey")

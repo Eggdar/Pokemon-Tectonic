@@ -60,3 +60,37 @@ end
 def showNoTeamEditingMessage()
 	pbMessage(_INTL("Editing your team is not allowed at the moment."))
 end
+
+def varoomBrokenEncounter(itemID)
+    if pbHasItem?(itemID)
+			pbMessage(_INTL("Varoom cries out!"))
+			pbMessage(_INTL("You decide to apply Oil to Varooms gears."))
+			pbMessage(_INTL("Varoom is now able to move freely! He is looking at you attentively"))
+			choices = ["Yes", "No"]
+			choice = pbMessage(_INTL("It seems it wants to join you team. Allow it?"),choices)
+			if(choice == 0)
+				pbAddPokemon(:VAROOM, level = 15)
+				blackFadeOutIn {
+						setMySwitch('B', true)
+				}
+			else
+				pbMessage(_INTL("Varoom saddens and runs away."))
+				blackFadeOutIn {
+						setMySwitch('B', true)
+				}
+			end
+
+    else
+      pbMessage(_INTL("Varoom cries out!"))
+			pbMessage(_INTL("It seems like Varoom's gears are unable to rotate!"))
+			pbMessage(_INTL("Perhaps an item can be used to help it move."))
+    end
+end
+
+def brockFliesAway
+  pbWait(40)
+  blackFadeOutIn {
+    pbSEPlay("Fly")
+		setMySwitch('B', true)
+  }
+end

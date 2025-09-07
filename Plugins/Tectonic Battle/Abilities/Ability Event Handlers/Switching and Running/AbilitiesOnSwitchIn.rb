@@ -1134,3 +1134,11 @@ BattleHandlers::AbilityOnSwitchIn.add(:CASHOUT,
       battler.hideMyAbilitySplash
   }
 )
+
+BattleHandlers::AbilityOnSwitchIn.add(:VESSELOFRUIN,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} is inflicted by ruin! Everyone deals 25 percent less special attack damage!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  })

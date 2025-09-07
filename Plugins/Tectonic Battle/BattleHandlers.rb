@@ -75,6 +75,7 @@ module BattleHandlers
     AttackCalcAllyAbility               = AbilityHandlerHash.new
     AttackCalcUserItem                  = ItemHandlerHash.new
     # Special Attack calculation
+    SpecialAttackCalcGlobalAbility      = AbilityHandlerHash.new
     SpecialAttackCalcUserAbility        = AbilityHandlerHash.new
     SpecialAttackCalcAllyAbility        = AbilityHandlerHash.new
     SpecialAttackCalcUserItem           = ItemHandlerHash.new
@@ -395,6 +396,10 @@ module BattleHandlers
     end
 
     #=============================================================================
+    def self.triggerSpecialAttackCalcGlobalAbility(ability, user, battle, spAtkMult)
+        ret = SpecialAttackCalcGlobalAbility.trigger(ability, user, battle, spAtkMult)
+        return ret || spAtkMult
+    end
 
     def self.triggerSpecialAttackCalcUserAbility(ability, user, battle, spAtkMult)
         ret = SpecialAttackCalcUserAbility.trigger(ability, user, battle, spAtkMult)

@@ -34,3 +34,9 @@ BattleHandlers::UserAbilityStartOfMove.add(:REFRACTIVE,
     moveUseTypeChangeAbility(ability, user, move, battle, true) if move.pulseMove?
   }
 )
+
+BattleHandlers::UserAbilityStartOfMove.add(:FUELSURGE,
+  proc { |ability, user, targets, move, battle|
+    user.instance_variable_set(:@preMoveHP, user.hp)
+  }
+)

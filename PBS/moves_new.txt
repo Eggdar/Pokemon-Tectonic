@@ -3233,6 +3233,19 @@ Flags = CanProtect,CanRandomCrit
 Description = The target is pierced with a pointed metal javelin. Can random critical hit.
 Animation = SPIKECANNON
 #-------------------------------
+[MACHDRIVE]
+Name = Mach Drive
+Type = STEEL
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = 1
+FunctionCode = UserLosesTenthOfTotalHP
+Flags = CanProtect
+Description = The user charges at lightning speed, striking first but straining its engine and harming itself.
+#-------------------------------
 [MAGNETIZE]
 Name = Magnetize
 Type = STEEL
@@ -6926,6 +6939,19 @@ FunctionCode = AddMoneyGainedFromBattle
 Flags = CanProtect
 Description = The user demands tribute from the target. Money is earned after the battle.
 Animation = PAYDAY
+#-------------------------------
+[RUINATION]
+Name = Ruination
+Type = DARK
+Category = Special
+Power = 1
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = FixedDamageHalfTargetHP
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user summons a ruinous disaster. This cuts the target’s HP in half.
+Animation = PUNISHMENT
 #-------------------------------
 [SCAM]
 Name = Scam

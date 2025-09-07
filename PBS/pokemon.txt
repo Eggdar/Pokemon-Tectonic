@@ -21128,3 +21128,67 @@ Kind = King
 Pokedex = Calyrex is a merciful Pokémon, capable of providing healing and blessings. It has the power to cause hearts to mend and plants to spring forth.
 Generation = 8
 Flags = Legendary
+#-------------------------------
+[VAROOM]
+Name = Varoom
+Type1 = STEEL
+Type2 = POISON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 60,80,50,70,45,50
+# Total = 355
+BaseEXP = 175
+Rareness = 70
+Happiness = 50
+Abilities = SPEEDBOOST,FUELSURGE
+Moves = 1,LICK,1,MAGNETRISE,1,POISONGAS,4,SMOG,7,TAUNT,10,ASSURANCE,13,SLUDGE,15,MACHDRIVE,17,GYROBALL,21,HEADBUTT,25,SCREECH,28,IRONHEAD,36,POISONJAB,41,UPROAR,50,GUNKSHOT
+LineMoves = ACIDSPRAY,BODYSLAM,BULLDOZE,DOUBLEEDGE,ENDURE,FACADE,FLASHCANNON,GYROBALL,IRONDEFENSE,IRONHEAD,METALSOUND,PARTINGSHOT,POISONJAB,POISONSPIKES,PROTECT,REST,ROCKTOMB,SANDSTORM,SCARYFACE,SELFDESTRUCT,SLEEPTALK,SLIMEBALL,SLUDGEWAVE,STEELBEAM,SUBSTITUTE,TAKEDOWN,TAUNT,THIEF,TORMENT,UPROAR,VENOSHOCK,ZENHEADBUTT
+Tribes = ASSASSIN,BUSHWHACKER
+StepsToHatch = 5120
+Height = 1.0
+Weight = 35.0
+Kind = Engine
+Pokedex = The steel section is Varoom’s actual body. This Pokémon clings to rocks and converts the minerals within into energy to fuel its activities.
+Generation = 9
+Evolutions = REVAVROOM,Level,40
+#-------------------------------
+[REVAVROOM]
+Name = Revavroom
+Type1 = STEEL
+Type2 = POISON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 80,124,90,100,64,67
+# Total = 525
+BaseEXP = 175
+Rareness = 140
+Happiness = 50
+Abilities = SPEEDBOOST,FUELSURGE
+Moves = 0,SHIFTGEAR,32,RAPIDSPIN,55,RAILCANNON
+LineMoves = GIGAIMPACT,HEAVYSLAM,HYPERBEAM,LASHOUT,OVERHEAT,SUNSHINE
+Tribes = ASSASSIN,BUSHWHACKER
+StepsToHatch = 5120
+Height = 1.8
+Weight = 120.0
+Kind = Engine
+Pokedex = Revavroom viciously threatens others with the sound of its exhaust. It sticks its tongue out from its cylindrical mouth and sprays toxic fluids.
+Generation = 9
+#-------------------------------
+[TINGLU]
+Name = Ting-Lu
+Type1 = DARK
+Type2 = GROUND
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 165,110,125,45,75,80
+# Total = 600
+BaseEXP = 285
+Rareness = 5
+Happiness = 0
+Abilities = VESSELOFRUIN
+Moves = 1,GEMSEAL,1,MEANLOOK,1,RUMBLE,1,SCARYFACE,5,SPIKES,10,PAYBACK,15,HEADBUTT,20,BULLDOZE,25,WHIRLWIND,30,MEMENTO,30,TAUNT,35,THRASH,40,DARKPULSE,45,EARTHQUAKE,50,RUINATION,55,THROATCHOP,60,STONEEDGE
+LineMoves = BODYPRESS,BODYSLAM,BULLDOZE,DARKPULSE,DIG,DOUBLEEDGE,EARTHPOWER,EARTHQUAKE,ENDURE,FACADE,GIGAIMPACT,HEAVYSLAM,HEX,HYPERBEAM,LASHOUT,MUDSHOT,PROTECT,REST,ROCKTOMB,SANDSTORM,SCARYFACE,SLEEPTALK,SNARL,SPIKES,STEALTHROCK,STOMPINGTANTRUM,STONEEDGE,SUBSTITUTE,SUNSHINE,TAKEDOWN,TAUNT,THROATCHOP,ZENHEADBUTT
+Tribes = NOBLE,SCRAPPER,TYRANNICAL
+StepsToHatch = 12500
+Height = 2.7
+Weight = 699.7
+Kind = Ruinous
+Pokedex = The fear poured into an ancient ritual vessel has clad itself in rocks and dirt to become a Pokémon.
+Generation = 9

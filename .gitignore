@@ -20,6 +20,7 @@ Analysis/
 *_backup*
 *.lnk
 Game.ini
+desktop.ini
 *.code-workspace
 towersingleteams.rxdata
 towersingle.rxdata

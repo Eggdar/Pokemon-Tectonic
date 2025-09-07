@@ -5,6 +5,7 @@ class PokeBattle_Battle
         @field.defaultWeather = value
         @field.weather         = value
         @field.weatherDuration = -1
+        @field.appliedCurse = :None
     end
 
     def weatherSuppressed?
@@ -21,14 +22,22 @@ class PokeBattle_Battle
     end
 
     # Used for causing weather by a move or by an ability.
-    def pbStartWeather(user, newWeather, duration = -1, showAnim = true, ignoreFainted = false, ability = nil)
+    def pbStartWeather(user, newWeather, duration = -1, showAnim = true, ignoreFainted = false, ability = nil, curse=:None)
+        if @field.weather == :Sandstorm && @field.appliedCurse == :BROCK
+            pbDisplay(_INTL("The storm is too powerful! Could not apply new weather."))
+            return   # do nothing, can't overwrite permanent Sandstorm
+        end
+
         oldWeather = @field.weather
 
         resetExisting = @field.weather == newWeather
         endWeather unless resetExisting
 
         # Set the new weather and duration
+        puts "World"
+        puts curse
         @field.weather = newWeather
+        @field.appliedCurse = curse
         duration = user.getWeatherSettingDuration(newWeather, duration, ignoreFainted) if duration > 0 && user
 
         noChange = resetExisting && duration == @field.weatherDuration

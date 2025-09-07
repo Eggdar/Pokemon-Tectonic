@@ -3046,3 +3046,20 @@ Pocket = 8
 Price = 0
 Flags = KeyItem,SkipPocketMessage
 Description = A vessel for negative emotions. Perfectly defeat enough trainers to earn its rewards.
+#-------------------------------
+[OILCAN]
+Name = Oil Can
+NamePlural = Oil Cans
+Pocket = 7
+Price = 0
+Flags = KeyItem,SkipPocketMessage
+Description = Oil used to lubricate mechanical parts. Perhaps could be used to fix a damaged machine.
+#-------------------------------
+[REMOTEPC]
+Name = Remote PC
+NamePlural = Remote PCs
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = Remote device that allows you to access your PC from anywhere.

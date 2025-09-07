@@ -210,10 +210,23 @@ class PokeBattle_Battler
             end
         end
 
+        # NEW: global field-wide abilities. These are unique by nature and do not stack
+        abilities = []
+        @battle.eachBattler do |battler|
+            battler.eachActiveAbility do |ability|
+                next if battler.ignoreAbilityInAI?(ability,aiCheck) && !AI_CHEATS_FOR_STAT_ABILITIES
+                abilities << ability
+            end
+        end
+        abilities.uniq!
+        abilities.each do |ability|
+            spAtkMult = BattleHandlers.triggerSpecialAttackCalcGlobalAbility(ability, self, @battle, spAtkMult)
+        end
+
         eachActiveItem do |item|
             spAtkMult = BattleHandlers.triggerSpecialAttackCalcUserItem(item, self, battle, spAtkMult)
         end
-
+        puts spAtkMult
         # Calculation
         return [(special_attack * spAtkMult).round, 1].max
     end
